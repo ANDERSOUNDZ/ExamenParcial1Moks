@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-
-namespace PruebaJustMock
+namespace CompraComerciante
 {
-    public abstract class Bodega
+    public abstract class Almacen
     {
         public abstract int LaptopsDisponibles(string modeloLaptop);
         public abstract List<string> GenerarRecibo(string modeloLaptop, int numeroLaptopsAComprar);
+        public abstract int LimiteDeCompra { get; set; }
     }
 }
